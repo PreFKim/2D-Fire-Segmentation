@@ -1,6 +1,6 @@
 # 화재 탐지 Segmentation
 
-[![video](./result/youtube.PNG)](https://www.youtube.com/embed/d2gssF8AygE)
+<a href="https://www.youtube.com/embed/d2gssF8AygE"><p align = "center"><img src = "./result/youtube.PNG"></a>
 
 Depth : 5, Initial Feature : 32 에서의 실험 영상
 
@@ -20,18 +20,11 @@ Depth : 5, Initial Feature : 32 에서의 실험 영상
 
 ### Test
 좌:Input 중:Mask 우:Mix(Input+Mask)
-![1](./result/test/1.jpg)
-
-![2](./result/test/2.jpg)
-
-![3](./result/test/3.jpg)
-
-![4](./result/test/4.jpg)
-
+<p align = "center"><img src="./result/test/1.jpg"></p>
+<p align = "center"><img src="./result/test/2.jpg"></p>
+<p align = "center"><img src="./result/test/3.jpg"></p>
+<p align = "center"><img src="./result/test/4.jpg"></p>
 ### Train
-
-![5](./result/train/1.jpg)
-
-![6](./result/train/2.jpg)
-
-![7](./result/train/3.jpg)
+<p align = "center"><img src="./result/train/1.jpg"></p>
+<p align = "center"><img src="./result/train/2.jpg"></p>
+<p align = "center"><img src="./result/train/3.jpg"></p>
