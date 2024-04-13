@@ -2,6 +2,8 @@
 
 <a href="https://www.youtube.com/embed/d2gssF8AygE"><p align = "center"><img src = "./result/youtube.PNG"></a>
 
+[영상 출처](https://m.facebook.com/%ED%95%B4%EB%82%A8%EC%86%8C%EB%B0%A9%EC%84%9C-245731289699385/videos/%EC%9E%84%EC%95%BC%ED%99%94%EC%9E%AC-%EC%9E%AC%ED%98%84-%EC%8B%A4%ED%97%982020317/504090356931158/)
+
 Depth : 5, Initial Feature : 32 에서의 실험 영상
 
 |Depth|Initial Feature|mIoU|FPS|
