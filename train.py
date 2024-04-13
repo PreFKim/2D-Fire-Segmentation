@@ -65,22 +65,17 @@ def preprocess(x, y):
 
 
 def train(args):
-    data_dir_train = os.path.join(args.data_path, 'train')
-    data_dir_train_image = os.path.join(data_dir_train, 'images')
-    data_dir_train_mask = os.path.join(data_dir_train, 'masks')
+    data_dir_image = os.path.join(args.data_path, 'images')
+    data_dir_mask = os.path.join(args.data_path, 'masks')
 
-    data_dir_test = os.path.join(args.data_path, 'test')
-    data_dir_test_image = os.path.join(data_dir_test, 'images')
    
-    train_x = sorted(glob.glob(os.path.join(data_dir_train_image, '*')))
-    train_y = sorted(glob.glob(os.path.join(data_dir_train_mask, '*')))
+    train_x = sorted(glob.glob(os.path.join(data_dir_image, '*')))
+    train_y = sorted(glob.glob(os.path.join(data_dir_mask, '*')))
 
     train_x, valid_x = train_test_split(train_x, test_size=args.valid_ratio)
     train_y, valid_y = train_test_split(train_y, test_size=args.valid_ratio)
 
-    test_x = sorted(glob.glob(os.path.join(data_dir_test_image,'*')))
-
-    print(f"Dataset: Train: {len(train_x)} - Valid: {len(valid_x)} - Test: {len(test_x)}")
+    print(f"Dataset: Train: {len(train_x)} - Valid: {len(valid_x)} ")
 
     train_dataset = tf_dataset(train_x, train_y, batch_size=args.batch_size)
     valid_dataset = tf_dataset(valid_x, valid_y, batch_size=args.batch_size)
