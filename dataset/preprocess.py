@@ -57,7 +57,7 @@ def process(data_path):
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_path", type="str", default="./data/")
+    parser.add_argument("--data_path", type=str, default="./data/")
     
     args = parser.parse_args()
 

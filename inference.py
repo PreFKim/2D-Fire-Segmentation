@@ -71,10 +71,10 @@ def cam(model, cam_num, pred_only=True):
     print(f"평균 FPS:{cnt/t}")
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--checkpoints", type="str", default="")
-    parser.add_argument("--image", type="str", default="", help="If you want to use cam, Input your cam number")
+    parser.add_argument("--checkpoints", type=str, default="")
+    parser.add_argument("--image", type=str, default="", help="If you want to use cam, Input your cam number")
     parser.add_argument("--pred_only", action="store_true", help="If you set this true, Inference return only Colored Prediction, else blended prediction")
     args = parser.parse_args()
     model = tf.keras.models.load_model(args.checkpoints)
