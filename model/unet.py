@@ -1,5 +1,5 @@
 import keras
-from ..cfg import *
+from cfg import *
 
 def conv(input,features,kernel_size=3,strides = 1,padding='same',is_relu=True,is_bn=True):
   x = keras.layers.Conv2D(features,kernel_size,strides,padding,kernel_initializer='he_normal')(input)
